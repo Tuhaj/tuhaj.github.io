@@ -319,6 +319,7 @@ body{
 }
 
 #blogs {
+    display: flex;
     columns:2;
 }
 
@@ -360,7 +361,7 @@ body{
 }
 
 ::selection {
-    color:var(--bg-color); 
+    color:var(--bg-color);
     background:var(--text-color);
 }
 
