@@ -1,9 +1,10 @@
 [
  {
+  "external_url": "https://medium.com/appnroll-publication/script-for-listing-all-your-aws-instances",
   "url_title": "script-listing-aws-instances",
-  "title": "script-listing-aws-instances",
-  "sub_title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  "top_image": "https://images.unsplash.com/photo-1553748024-d1b27fb3f960?w=1450",
+  "title": "A Script for Listing All of Your AWS Instances",
+  "sub_title": "I wanted to share a script that will save you time and money on finding and managing lost AWS instances",
+  "top_image": "https://cdn-images-1.medium.com/max/880/1*cDVJs8uwltnrYfHkbWXfsA.png",
   "visible": true
  }
 ]

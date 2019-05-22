@@ -339,7 +339,7 @@
             <div class="projects" id="forks_section"></div>
         </div>
         <div id="blog_section">
-            <h1>Blog.</h1>
+            <h1>Blog</h1>
             <div id="blogs"></div>
         </div>
         <div id="footer">
@@ -362,7 +362,7 @@
         }
         for(var i = 0; i < blog.length; i++){
             $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
+            <a href="${blog[i].external_url}" target="_blank">
                 <section>
                     <img src="${blog[i].top_image}">
                     <div class="blog_container">
