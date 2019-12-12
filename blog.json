@@ -3,8 +3,8 @@
   "external_url": "https://medium.com/appnroll-publication/script-for-listing-all-your-aws-instances-bfc738a761f2",
   "url_title": "script-listing-aws-instances",
   "title": "A Script for Listing All of Your AWS Instances",
-  "sub_title": "I wanted to share a script that will save you time and money on finding and managing lost AWS instances",
-  "top_image": "https://cdn-images-1.medium.com/max/880/1*cDVJs8uwltnrYfHkbWXfsA.png",
+  "sub_title": "Find your lost AWS instances!",
+  "top_image": "https://assets-xfaang.s3.eu-central-1.amazonaws.com/instances_screen.png",
   "visible": true
  },
  {
@@ -13,6 +13,14 @@
   "title": "The Software Development Process at App’n’roll",
   "sub_title": "How do we develop apps at App'n'roll?",
   "top_image": "https://cdn-images-1.medium.com/max/880/0*QOK1B8gUq8JVC_zG",
+  "visible": true
+ },
+ {
+  "external_url": "https://medium.com/appnroll-publication/the-software-development-process-at-appn-roll-3bdd80328166",
+  "url_title": "Prawa dostępu w systemach UNIX, notacja numeryczna i symboliczna",
+  "title": "Prawa dostępu w systemach UNIX, notacja numeryczna i symboliczna",
+  "sub_title": "YouTube Video",
+  "top_image": "https://assets-xfaang.s3.eu-central-1.amazonaws.com/access_linux.png",
   "visible": true
  }
 ]

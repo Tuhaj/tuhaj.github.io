@@ -319,7 +319,7 @@ body{
 }
 
 #blogs {
-    display: flex;
+    display:flex;
     columns:2;
 }
 
@@ -434,7 +434,8 @@ body{
 
 ::-webkit-scrollbar {width:5px;height:5px;}
 ::-webkit-scrollbar-track {background:var(--bg-color);}
-::-webkit-scrollbar-thumb {background:var(--text-color);}:root {
+::-webkit-scrollbar-thumb {background:var(--text-color);}
+:root {
   --bg-color: #fff;
   --text-color: rgb(10, 10, 10);
   --blog-gray-color: rgb(80, 80, 80);
