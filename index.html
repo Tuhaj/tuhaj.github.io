@@ -6,33 +6,196 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
     <link rel="stylesheet" href="index.css">
-<link rel="icon" href="https://avatars1.githubusercontent.com/u/6118271?v=4" type="image/png"></head>
-<body>
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/6118271?v=4" type="image/png"></head>
+
+  <body>
     <div id="loading">
-        <div id="spinner"></div>
+      <div id="spinner"></div>
     </div>
     <div id="profile">
-        <div id="profile_img" style="background: url(https://avatars1.githubusercontent.com/u/6118271?v=4) center;"></div>
-        <div id="username"><span style="display:block;">Piotr Zientara</span>@Tuhaj</div>
-        <div id="userbio" style="display: block;">WarsawJS &amp; Xfaang CEO</div>
-        <div id="about">
+      <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/6118271?v=4) center;"></div>
+      <div id="username"><span style="display:block;">Piotr Zientara</span><a href="https://github.com/Tuhaj">@Tuhaj</a></div>
+      <div id="userbio" style="display: block;">🛸 Xfaang CEO | 
+🔥 WarsawJS Community Leader |
+👨‍💻 Fullstack Dev | 
+👨‍🏫 Educator &amp; Philosopher | 
+👨‍👩‍👦‍👦 Husband, 2x Dad</div>
+      <div id="about">
                 <span style="display:block;"><i class="fas fa-users"></i> &nbsp; @xfaang</span>
                 <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://medium.com/@piotrzientara">Medium</a></span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://piotrzientara.pl">Homepage</a></span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://warsawjs.com">WarsawJS</a></span>
-                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://kmag.pl">K MAG</a></span>
+                <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a href="https://medium.com/@piotrzientara">https://medium.com/@piotrzientara</a></span>
                 <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Warsaw, Poland</span>
+                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
+                <div class="socials">
+                <span style="display:none !important;"><a href="https://www.twitter.com/undefined" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.linkedin.com/in/undefined/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+                <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+                </div>
+                </div>
     </div>
     <div id="display">
-        <div id="blog_section">
-            <h1>Blog.</h1>
-            <div id="blogs"></div>
-        </div>
-        <div id="work">
-            <h1>Work.</h1>
-            <div class="projects" id="work_section">
+      <div id="work">
+        <h1>Work.</h1>
+        <div class="projects" id="work_section">
+                        <a href="https://github.com/piecioshka/warsawjs-workshop-7-webcomponents" target="_blank">
+                        <section>
+                            <div class="section_title">warsawjs-workshop-7-webcomponents</div>
+                            <div class="about_section">
+                            <span style="display:block;">⛩️ WarsawJS Workshop #7 — Web Components</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 5</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/piecioshka/warsawjs-workshop-2-blog" target="_blank">
+                        <section>
+                            <div class="section_title">warsawjs-workshop-2-blog</div>
+                            <div class="about_section">
+                            <span style="display:block;">⛩️ WarsawJS Workshop #2 — JavaScript (Intermediate Level)</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 4</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/piecioshka/warsawjs-workshop-1-gallery" target="_blank">
+                        <section>
+                            <div class="section_title">warsawjs-workshop-1-gallery</div>
+                            <div class="about_section">
+                            <span style="display:block;">⛩️ WarsawJS Workshop #1 — JavaScript (Basic Level)</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/piecioshka/warsawjs-workshop-3-online-shop" target="_blank">
+                        <section>
+                            <div class="section_title">warsawjs-workshop-3-online-shop</div>
+                            <div class="about_section">
+                            <span style="display:block;">⛩️ WarsawJS Workshop #3 — Angular.js</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 3</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/Chess-Clock" target="_blank">
+                        <section>
+                            <div class="section_title">Chess-Clock</div>
+                            <div class="about_section">
+                            <span style="display:block;">This double timer can help you while playing board games like chess or scrabble</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/workshop-40-support-slides" target="_blank">
+                        <section>
+                            <div class="section_title">workshop-40-support-slides</div>
+                            <div class="about_section">
+                            <span style="display:block;">WarsawJS #40 Security support slides</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 2</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/pardon-gpt" target="_blank">
+                        <section>
+                            <div class="section_title">pardon-gpt</div>
+                            <div class="about_section">
+                            <span style="display:block;">Pardon! Je'ai pété!</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/react-chess-clock" target="_blank">
+                        <section>
+                            <div class="section_title">react-chess-clock</div>
+                            <div class="about_section">
+                            <span style="display:block;">rewritten chess clock to react basing on create-react-app</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 2</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/ruby-phone-translator" target="_blank">
+                        <section>
+                            <div class="section_title">ruby-phone-translator</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/rgierczak/warsawjs-workshop-1-gallery" target="_blank">
+                        <section>
+                            <div class="section_title">warsawjs-workshop-1-gallery</div>
+                            <div class="about_section">
+                            <span style="display:block;">Projekt dostępny pod adresem:</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/rusinekm/CarService" target="_blank">
+                        <section>
+                            <div class="section_title">CarService</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/about-warsawjs" target="_blank">
+                        <section>
+                            <div class="section_title">about-warsawjs</div>
+                            <div class="about_section">
+                            <span style="display:block;">presentation for 6th WarsawJS Birthday</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
                         <a href="https://github.com/Tuhaj/ChessClockRN" target="_blank">
                         <section>
                             <div class="section_title">ChessClockRN</div>
@@ -41,6 +204,19 @@
                             </div>
                             <div class="bottom_section">
                                 <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/CliGif" target="_blank">
+                        <section>
+                            <div class="section_title">CliGif</div>
+                            <div class="about_section">
+                            <span style="display:block;">when run in console returns a url to gif on Giphy</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby</span>
                                 <span><i class="fas fa-star"></i>&nbsp; 0</span>
                                 <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
                             </div>
@@ -197,6 +373,19 @@
                             </div>
                             <div class="bottom_section">
                                 <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Io</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/Tuhaj/piotrzientara" target="_blank">
+                        <section>
+                            <div class="section_title">piotrzientara</div>
+                            <div class="about_section">
+                            <span style="display:none;">undefined</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Astro</span>
                                 <span><i class="fas fa-star"></i>&nbsp; 0</span>
                                 <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
                             </div>
@@ -540,6 +729,19 @@
                             </div>
                         </section>
                         </a>
+                        <a href="https://github.com/Tuhaj/warsawjs-workshop-52-itunes" target="_blank">
+                        <section>
+                            <div class="section_title">warsawjs-workshop-52-itunes</div>
+                            <div class="about_section">
+                            <span style="display:block;">itunes app</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+                            </div>
+                        </section>
+                        </a>
                         <a href="https://github.com/Tuhaj/warsawjs-workshop-8-social-network" target="_blank">
                         <section>
                             <div class="section_title">warsawjs-workshop-8-social-network</div>
@@ -592,73 +794,66 @@
                             </div>
                         </section>
                         </a>
-                        <a href="https://github.com/Tuhaj/Chess-Clock" target="_blank">
+                        <a href="https://github.com/yyx990805/hackarthon" target="_blank">
                         <section>
-                            <div class="section_title">Chess-Clock</div>
-                            <div class="about_section">
-                            <span style="display:block;">This double timer can help you while playing board games like chess or scrabble</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Tuhaj/react-chess-clock" target="_blank">
-                        <section>
-                            <div class="section_title">react-chess-clock</div>
-                            <div class="about_section">
-                            <span style="display:block;">rewritten chess clock to react basing on create-react-app</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; JavaScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/Tuhaj/ruby-phone-translator" target="_blank">
-                        <section>
-                            <div class="section_title">ruby-phone-translator</div>
+                            <div class="section_title">hackarthon</div>
                             <div class="about_section">
                             <span style="display:none;">undefined</span>
                             </div>
                             <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Ruby</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+                            </div>
+                        </section>
+                        </a>
+                        <a href="https://github.com/yyx990805/jit-gal-3d" target="_blank">
+                        <section>
+                            <div class="section_title">jit-gal-3d</div>
+                            <div class="about_section">
+                            <span style="display:block;">Galeria prezentowana w czasie rzeczywistym i tworzona również w czasie rzeczywistym, a do tego w 3D #threejs</span>
+                            </div>
+                            <div class="bottom_section">
+                                <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
+                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
                                 <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
                             </div>
                         </section>
                         </a></div>
-        </div>
-        <div id="forks" style="display:none;">
-            <h1>Forks.</h1>
-            <div class="projects" id="forks_section"></div>
-        </div>
-        <div id="footer">
-            <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-        </div>
+      </div>
+      <div id="forks" style="display:none;">
+        <h1>Forks.</h1>
+        <div class="projects" id="forks_section"></div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="footer">
+        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
+      </div>
     </div>
     <script type="text/javascript">
-    setTimeout(function(){
+      setTimeout(function() {
         document.getElementById("loading").classList.add("animated");
         document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function(){
-        document.getElementById("loading").classList.remove("animated");
-        document.getElementById("loading").classList.remove("fadeOut");
-        document.getElementById("loading").style.display = "none";
-        },800);
-    },1500);
-    $.getJSON("blog.json", function(blog){
-        if(blog.length == 0){
-            return document.getElementById("blog_section").style.display = "none";
+        setTimeout(function() {
+          document.getElementById("loading").classList.remove("animated");
+          document.getElementById("loading").classList.remove("fadeOut");
+          document.getElementById("loading").style.display = "none";
+        }, 800);
+      }, 1500);
+      $.getJSON("blog.json", function(blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById("blog_section").style.display =
+            "none");
         }
-        for(var i = 0; i < blog.length; i++){
-            $("#blogs").append(`
+        for (var i = 0; i < blog.length; i++) {
+          $("#blogs").append(`
             <a href="./blog/${blog[i].url_title}/" target="_blank">
                 <section>
-                    <img src="${blog[i].top_image}">
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
                     <div class="blog_container">
                         <div class="section_title">${blog[i].title}</div>
                         <div class="about_section">
@@ -669,8 +864,37 @@
             </a>
             `);
         }
-    });
+      }).fail(function() {
+        return (document.getElementById("blog_section").style.display = "none");
+      });
     </script>
 
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: "#work_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
+
+      const magicForksGrid = new MagicGrid({
+        container: "#forks_section",
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true
+      });
+
+      $("document").ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
+    </script>
+  
 
 </body></html>
